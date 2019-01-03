@@ -1,14 +1,15 @@
 {
-  "main.css": "/cdussuelwebsite2/static/css/main.99ce7ad3.chunk.css",
-  "main.js": "/cdussuelwebsite2/static/js/main.02852194.chunk.js",
-  "main.js.map": "/cdussuelwebsite2/static/js/main.02852194.chunk.js.map",
+  "main.css": "/cdussuelwebsite2/static/css/main.2a8275cf.chunk.css",
+  "main.js": "/cdussuelwebsite2/static/js/main.6f4f8112.chunk.js",
+  "main.js.map": "/cdussuelwebsite2/static/js/main.6f4f8112.chunk.js.map",
   "static/js/1.fa92c112.chunk.js": "/cdussuelwebsite2/static/js/1.fa92c112.chunk.js",
   "static/js/1.fa92c112.chunk.js.map": "/cdussuelwebsite2/static/js/1.fa92c112.chunk.js.map",
   "runtime~main.js": "/cdussuelwebsite2/static/js/runtime~main.dd78b6f3.js",
   "runtime~main.js.map": "/cdussuelwebsite2/static/js/runtime~main.dd78b6f3.js.map",
   "static/media/logo.svg": "/cdussuelwebsite2/static/media/logo.5d5d9eef.svg",
-  "static/css/main.99ce7ad3.chunk.css.map": "/cdussuelwebsite2/static/css/main.99ce7ad3.chunk.css.map",
+  "static/media/App.css": "/cdussuelwebsite2/static/media/Lack-Regular.21ba0040.woff",
+  "static/css/main.2a8275cf.chunk.css.map": "/cdussuelwebsite2/static/css/main.2a8275cf.chunk.css.map",
   "index.html": "/cdussuelwebsite2/index.html",
-  "precache-manifest.186e05cec26de00f8149341125daf477.js": "/cdussuelwebsite2/precache-manifest.186e05cec26de00f8149341125daf477.js",
+  "precache-manifest.9376ebe711dcf6a557d36b03938c655a.js": "/cdussuelwebsite2/precache-manifest.9376ebe711dcf6a557d36b03938c655a.js",
   "service-worker.js": "/cdussuelwebsite2/service-worker.js"
 }
