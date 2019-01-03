@@ -4,24 +4,24 @@ self.__precacheManifest = [
     "url": "/cdussuelwebsite2/static/media/info.617ce412.svg"
   },
   {
-    "revision": "703f505deb9b785e8446",
-    "url": "/cdussuelwebsite2/static/css/main.67671742.chunk.css"
+    "revision": "ae6e440133cddb2250f8",
+    "url": "/cdussuelwebsite2/static/css/main.5ad1e01a.chunk.css"
   },
   {
     "revision": "ea10844cf16578aa08b5d71886247b36",
     "url": "/cdussuelwebsite2/static/media/Lack-Regular.ea10844c.ttf"
   },
   {
-    "revision": "a5d7c503870d3707727f",
-    "url": "/cdussuelwebsite2/static/js/1.a5d7c503.chunk.js"
+    "revision": "6a107320f34adc243cee",
+    "url": "/cdussuelwebsite2/static/js/1.6a107320.chunk.js"
   },
   {
     "revision": "dd78b6f3f0d5cd9b61ea",
     "url": "/cdussuelwebsite2/static/js/runtime~main.dd78b6f3.js"
   },
   {
-    "revision": "703f505deb9b785e8446",
-    "url": "/cdussuelwebsite2/static/js/main.703f505d.chunk.js"
+    "revision": "ae6e440133cddb2250f8",
+    "url": "/cdussuelwebsite2/static/js/main.ae6e4401.chunk.js"
   },
   {
     "revision": "21ba0040bae49f616016f93d817574c9",
@@ -36,11 +36,11 @@ self.__precacheManifest = [
     "url": "/cdussuelwebsite2/static/media/Lack-Regular.2ba06ebe.woff2"
   },
   {
-    "revision": "a5d7c503870d3707727f",
-    "url": "/cdussuelwebsite2/static/css/1.39548293.chunk.css"
+    "revision": "6a107320f34adc243cee",
+    "url": "/cdussuelwebsite2/static/css/1.fc208997.chunk.css"
   },
   {
-    "revision": "6af37d6ca962f33f6cbe00c2d5ede53a",
+    "revision": "96c7372e375259aae1e10771495f39df",
     "url": "/cdussuelwebsite2/index.html"
   }
 ];
