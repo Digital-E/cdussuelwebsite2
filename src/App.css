@@ -1,32 +1,380 @@
-.App {
+@font-face {
+  font-family: "Lack";
+  src: url("Fonts/Lack-Regular.woff") format('woff');
+  src: url('Fonts/Lack-Regular.eot?#iefix') format('embedded-opentype'); /* IE6-IE8 */
+  src: url('Fonts/Lack-Regular.woff2') format('woff2'); /* Super Modern Browsers */
+  src: url('Fonts/Lack-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
+}
+
+body {
+  font-family: "Lack";
+  overflow-x: hidden;
+}
+
+@media (max-width: 576px) {
+  .unstack.portrait img {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .unstack.landscape img {
+    left: 15%;
+  }
+}
+
+.mouse-text {
+  position: absolute;
+  font-size: 30px;
+  z-index: 999;
+}
+
+.hide-mouse-text {
+  display: none;
+}
+
+.blurAll {
+  filter: blur(20px);
+  transition-duration: 2s;
+}
+
+.about-button {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  margin-top: 35px;
+  margin-right: 50px;
+  z-index: 999;
+}
+
+.about-button:hover {
+  cursor: pointer;
+}
+
+.about-button img {
+  height: 30px;
+}
+
+.hidden-about-text {
+  display: none !important;
+}
+
+.about-text {
+  position: fixed;
+  top: 0;
+  transition-duration: 3s;
+  width: 100vw;
+  height: 100vh;
+  z-index: 998;
+  display: block;
+}
+
+.hidden-about-inner-text {
+  position: fixed;
+  font-size: 40px;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%,-50%);
+  opacity: 0 !important;
+  transition-duration: 1s;
+  z-index: 0;
+}
+
+@media(max-width: 576px) {
+  .hidden-about-inner-text {
+    position: absolute;
+    font-size: 40px;
+    opacity: 0 !important;
+    transition-duration: 1s;
+    z-index: 0;
+  }
+}
+
+.about-inner-text {
+  position: fixed;
+  font-size: 40px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  opacity: 1;
+  transition-duration: 5s;
+  z-index: 998;
+}
+
+@media(max-width: 576px) {
+  .about-inner-text {
+    position: absolute;
+    font-size: 40px;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition-duration: 5s;
+    z-index: 998;
+  }
+}
+
+.filter {
+  position: fixed;
+  bottom: 0;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  transition-duration: 2s;
+}
+
+@media(max-width: 576px){
+  .about-button {
+    position: fixed;
+    bottom: 0;
+    top: auto;
+    bottom: 0;
+    margin-top: 0px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    z-index: 999;
+  }
+
+  .filter {
+    display: none;
+  }
+}
+
+.blurFilter {
+  filter: blur(2px);
+  transition-duration: 3s;
+}
+
+.noBlurFilter {
+  filter: blur(0px);
+  transition-duration: 3s;
+}
+
+.filter:hover {
+  cursor: pointer;
+}
+
+.title {
+  position: fixed;
+  top: 0px;
+  margin: 20px auto;
+  font-size: 40px;
+  white-space: nowrap;
   text-align: center;
+  width: 100%;
+  transition-duration: 3s;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
+@media(min-width: 576px) {
+  .title {
+    top: 0px;
+    margin: 20px 0px 0px 50px;
+    position: fixed;
+    text-align: left;
+    font-size: 60px;
+  }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+.image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-origin: bottom left;
+}
+
+.react-grid-item:hover {
+  z-index: 999 !important;
+  transition-duration: 0s !important;
+}
+
+.wrapper {
+  margin: 150px auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 200px;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  transition-duration: 2s;
 }
 
-.App-link {
-  color: #61dafb;
+@media(min-width: 576px) {
+  .wrapper {
+    margin: 250px auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 200px;
+    align-items: center;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Group images right column */
+
+.react-grid-layout:nth-child(even) .stack.landscape {
+  transform: translate(20%,0%) !important;
+}
+
+.react-grid-layout:nth-child(even) .stack.portrait {
+  transform: translate(50%,-10%) !important;
+}
+
+/* Group images left column */
+
+.react-grid-layout:nth-child(odd) .stack.landscape {
+  transform: translate(50%,0%) !important;
+}
+
+.react-grid-layout:nth-child(odd) .stack.portrait {
+  transform: translate(100%,-10%) !important;
+}
+
+@media(max-width: 576px) {
+  .react-grid-layout:nth-child(odd) .stack.landscape {
+    transform: translate(15%,15%) !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .react-grid-layout:nth-child(odd) .stack.portrait {
+    transform: translate(50%,0%) !important;
   }
+}
+
+/* General stack parameters */
+
+.react-grid-layout .stack.portrait {
+  height: 280px !important;
+  width: 200px !important;
+}
+
+.react-grid-layout .stack.landscape {
+  height: 200px !important;
+  width: 300px !important;
+}
+
+.layout.expanded {
+  transition-duration: 0.3s !important;
+}
+
+.react-grid-item {
+  transition-duration: 0.3s !important;
+}
+
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  animation: unblur 1s;
+}
+
+@keyframes unblur {
+  0% {
+    opacity: 0;
+    padding-top:20px;
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    padding-top:0px;
+    filter: blur(0px);
+  }
+}
+
+
+.notexpanded {
+  height: 200px !important;
+}
+
+
+/* Rotate right stacks */
+
+.react-grid-layout:nth-child(even) {
+  transform: rotateZ(180deg) !important;
+}
+
+
+/* Left Column Individual image rotate */
+
+  .react-grid-layout:nth-child(odd) div:nth-child(1) img {
+    transform: rotateZ(-10deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(2) img {
+    transform: rotateZ(-5deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(3) img {
+    transform: rotateZ(6deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(4) img {
+    transform: rotateZ(-3deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(5) img {
+    transform: rotateZ(5deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(6) img {
+    transform: rotateZ(-6deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(7) img {
+    transform: rotateZ(3deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(8) img {
+    transform: rotateZ(3deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(9) img {
+    transform: rotateZ(3deg) !important;
+  }
+
+  .react-grid-layout:nth-child(odd) div:nth-child(10) img {
+    transform: rotateZ(3deg) !important;
+  }
+
+/* Right Column Individual image rotate */
+
+.react-grid-layout:nth-child(even) div:nth-child(1) img {
+  transform: rotateZ(170deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(2) img {
+  transform: rotateZ(185deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(3) img {
+  transform: rotateZ(186deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(4) img {
+  transform: rotateZ(183deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(5) img {
+  transform: rotateZ(175deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(6) img {
+  transform: rotateZ(189deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(7) img {
+  transform: rotateZ(172deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(8) img {
+  transform: rotateZ(186deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(9) img {
+  transform: rotateZ(183deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(10) img {
+  transform: rotateZ(175deg) !important;
+}
+
+.react-grid-layout:nth-child(even) div:nth-child(11) img {
+  transform: rotateZ(188deg) !important;
 }
