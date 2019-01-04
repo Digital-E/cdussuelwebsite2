@@ -4,17 +4,24 @@
   "private": true,
   "homepage": "http://digital-e.github.io/cdussuelwebsite2",
   "dependencies": {
+    "prismic-javascript": "^2.0.1",
+    "prismic-reactjs": "^0.3.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-grid-layout": "^0.16.6",
+    "react-lazyload": "^2.3.0",
+    "react-reveal": "^1.2.2",
+    "react-router": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "router": "^1.3.3"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"

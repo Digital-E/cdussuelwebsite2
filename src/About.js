@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import info from './info.svg';
 
+import insta from './insta-icon.png'
+
 class About extends React.Component {
   constructor(props) {
     super(props);
@@ -16,9 +18,11 @@ class About extends React.Component {
       <div class={this.props.className ? 'about-text' : 'about-text hidden-about-text'}>
       </div>
       <p class={this.props.className ? 'about-inner-text' : 'hidden-about-inner-text'}>
-      Either through Photography, Fashion Design, or Art Direction, Caroline Dussuel
-      constantly seeks to channel her ethically-oriented vision and environmentally conscious mind through her work for an ever more
-      sustainable future.<br/>
+        Caroline Dussuel is a 23-year-old french creative whose main focus is on humans and their particularities. Her curiosity for sociology and psychology brought her to experience different urban and alternative communities, like skateboarding or rave parties, not as an active participant but as an outsider, through the lens of her camera. Naturally drawn towards the unexpected and creative people, she thrives off their energy. For many years she spent time capturing these people, either for herself or through commissioned work.
+  After having studied fashion and design at ESMOD, she became very concerned about industry practices and their impact and started imagining how she could help contribute to a more sustainable future.<br/><br/>
+If you would like to work with Caroline, <a id="email" href="mailto:cdussuel@wanadoo.fr">contact her.</a>
+<br/><br/>
+<a href="https://www.instagram.com/carokenzy/" target="_blank"><img id="insta-icon" src={insta}></img></a>
       </p>
       </>
     )

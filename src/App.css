@@ -11,6 +11,27 @@ body {
   overflow-x: hidden;
 }
 
+#insta-icon {
+  width: 30px;
+  transition-duration: 2s;
+}
+
+#insta-icon:hover {
+  filter: blur(2px);
+  transition-duration: 2s;
+}
+
+#email {
+  color: black;
+  transition-duration: 2s;
+}
+
+#email:hover {
+  color: black;
+  filter: blur(2px);
+  transition-duration: 2s;
+}
+
 @media (max-width: 576px) {
   .unstack.portrait img {
     left: 50%;
@@ -34,6 +55,11 @@ body {
 
 .blurAll {
   filter: blur(20px);
+  transition-duration: 2s;
+}
+
+.blurAllNone {
+  filter: blur(0);
   transition-duration: 2s;
 }
 
@@ -70,46 +96,54 @@ body {
 
 .hidden-about-inner-text {
   position: fixed;
-  font-size: 40px;
+  font-size: 24px;
   left: 50%;
   top: 55%;
   transform: translate(-50%,-50%);
   opacity: 0 !important;
   transition-duration: 1s;
   z-index: 0;
+  line-height: 35px;
+  text-align: center;
 }
 
 @media(max-width: 576px) {
   .hidden-about-inner-text {
-    position: absolute;
-    font-size: 40px;
+    position: fixed;
+    font-size: 16px;
+    width: 80%;
     opacity: 0 !important;
     transition-duration: 1s;
     z-index: 0;
+    line-height: 20px;
   }
 }
 
 .about-inner-text {
   position: fixed;
-  font-size: 40px;
+  font-size: 24px;
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
   opacity: 1;
   transition-duration: 5s;
   z-index: 998;
+  line-height: 35px;
+  text-align: center;
 }
 
 @media(max-width: 576px) {
   .about-inner-text {
-    position: absolute;
-    font-size: 40px;
+    position: fixed;
+    font-size: 16px;
+    width: 80%;
     left: 50%;
     top: 0;
     transform: translateX(-50%);
     opacity: 1;
     transition-duration: 5s;
     z-index: 998;
+    line-height: 20px;
   }
 }
 
