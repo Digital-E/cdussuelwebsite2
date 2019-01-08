@@ -90,6 +90,7 @@ loadedIndividual() {
 
 
   render() {
+
       return (
         <>
         <MouseText mouseIn={this.state.mouseIn} info={this.state.info}/>

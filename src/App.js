@@ -12,17 +12,23 @@ import {Link, RichText, Date} from 'prismic-reactjs';
 import Grid from './Grid.js';
 
 //Filter
-import Filter from './Filter.js'
+import Filter from './Filter.js';
 
 //About
 
-import About from './About.js'
+import About from './About.js';
 
 //Title
 
-import Title from './Title.js'
+import Title from './Title.js';
 
+//Parallax Provider
 
+import { ParallaxProvider } from 'react-scroll-parallax';
+
+//Parallax
+
+import { Parallax } from 'react-scroll-parallax';
 
 class App extends React.Component {
   constructor(props) {
@@ -125,7 +131,7 @@ componentWillMount() {
 const apiEndpoint = 'https://caroline-dussuel.prismic.io/api/v2';
 
 Prismic.api(apiEndpoint).then(api => {
-  api.query('',{ orderings : '[document.last_publication_date desc]' }).then(response => {
+  api.query('',{ orderings : '[document.first_publication_date desc]' }).then(response => {
     if (response) {
       this.setState({ doc: response.results });
     }
@@ -221,13 +227,15 @@ handleListClick = (e) => {
       <Title className={this.state.blur ? 'title blurAll' : 'title blurAllNone'}/>
       <About className={this.state.blur} handleClick={this.handleClick}/>
       <Filter className={this.state.blur ? 'filter blurAll' : 'filter blurAllNone'} handleListClick={this.handleListClick}/>
-      <div className={this.state.blur ? 'wrapper blurAll' : 'wrapper'}>
+      <div className={this.state.blur ? 'wrapper blurAll' : 'wrapper blurAllNone'}>
         {this.state.list}
-    </div>
+      </div>
       </>
     )
   }
 }
+
+
 
 
 export default App;

@@ -59,7 +59,7 @@ body {
 }
 
 .blurAllNone {
-  filter: blur(0);
+  filter: blur(0px) ;
   transition-duration: 2s;
 }
 
@@ -98,7 +98,7 @@ body {
   position: fixed;
   font-size: 24px;
   left: 50%;
-  top: 55%;
+  top: 52%;
   transform: translate(-50%,-50%);
   opacity: 0 !important;
   transition-duration: 1s;
@@ -126,7 +126,7 @@ body {
   top: 50%;
   transform: translate(-50%,-50%);
   opacity: 1;
-  transition-duration: 5s;
+  transition-duration: 2s;
   z-index: 998;
   line-height: 35px;
   text-align: center;
