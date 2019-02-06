@@ -32,12 +32,12 @@ self.__precacheManifest = [
     "url": "/static/media/Lack-Regular.557f8242.eot"
   },
   {
-    "revision": "2ba06ebe0f91838cd994b452264f3d54",
-    "url": "/static/media/Lack-Regular.2ba06ebe.woff2"
-  },
-  {
     "revision": "21ba0040bae49f616016f93d817574c9",
     "url": "/static/media/Lack-Regular.21ba0040.woff"
+  },
+  {
+    "revision": "2ba06ebe0f91838cd994b452264f3d54",
+    "url": "/static/media/Lack-Regular.2ba06ebe.woff2"
   },
   {
     "revision": "001374954bce056a9d5c",
