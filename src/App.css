@@ -6,6 +6,10 @@
   src: url('Fonts/Lack-Regular.ttf')  format('truetype') /* Safari, Android, iOS */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Lack";
   overflow-x: hidden;
@@ -274,7 +278,7 @@ body {
 
 .react-grid-layout .stack.portrait {
   height: 280px !important;
-  width: 200px !important;
+  width: 190px !important;
 }
 
 .react-grid-layout .stack.landscape {
@@ -293,23 +297,6 @@ body {
 
 .hide {
   opacity: 0;
-}
-
-.show {
-  animation: unblur 1s;
-}
-
-@keyframes unblur {
-  0% {
-    opacity: 0;
-    padding-top:20px;
-    filter: blur(10px);
-  }
-  100% {
-    opacity: 1;
-    padding-top:0px;
-    filter: blur(0px);
-  }
 }
 
 

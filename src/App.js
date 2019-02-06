@@ -172,7 +172,7 @@ handleListClick = (e) => {
         }
 
         this.renderAll();
-
+          
       });
     })
 
@@ -216,6 +216,9 @@ handleListClick = (e) => {
       });
     })
   };
+setTimeout(function(){
+  window.scrollTo(0, 0)  
+},1000)
 };
 
 
