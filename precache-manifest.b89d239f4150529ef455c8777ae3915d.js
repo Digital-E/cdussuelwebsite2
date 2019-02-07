@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/static/media/insta-icon.507d627b.png"
   },
   {
-    "revision": "664e9ff4967dc6cebb73",
-    "url": "/static/css/main.f424da15.chunk.css"
+    "revision": "99daa7d17b02a65f3c73",
+    "url": "/static/css/main.967411dc.chunk.css"
   },
   {
     "revision": "ea10844cf16578aa08b5d71886247b36",
@@ -24,8 +24,8 @@ self.__precacheManifest = [
     "url": "/static/media/info.617ce412.svg"
   },
   {
-    "revision": "664e9ff4967dc6cebb73",
-    "url": "/static/js/main.664e9ff4.chunk.js"
+    "revision": "99daa7d17b02a65f3c73",
+    "url": "/static/js/main.99daa7d1.chunk.js"
   },
   {
     "revision": "21ba0040bae49f616016f93d817574c9",
@@ -44,7 +44,7 @@ self.__precacheManifest = [
     "url": "/static/css/1.5fcba9f8.chunk.css"
   },
   {
-    "revision": "7c416ab17cbe480f7f1b135ce5ae71d5",
+    "revision": "b02caaca3e970247e4462dd522af697c",
     "url": "/index.html"
   }
 ];
