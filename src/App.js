@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import ReactGA from 'react-ga';
+
 //React Routers
 import { Router, Route, Switch } from 'react-router';
 
@@ -127,7 +129,7 @@ linkResolver(doc) {
 }
 
 
-componentWillMount() {
+componentDidMount() {
 const apiEndpoint = 'https://caroline-dussuel.prismic.io/api/v2';
 
 Prismic.api(apiEndpoint).then(api => {
@@ -139,7 +141,11 @@ Prismic.api(apiEndpoint).then(api => {
     this.renderAll();
 
   });
-})
+});
+
+ReactGA.initialize('UA-134074544-1');
+ReactGA.pageview(window.location.pathname + window.location.search);
+
 }
 
 handleClick = () => {
@@ -218,7 +224,8 @@ handleListClick = (e) => {
   };
 setTimeout(function(){
   window.scrollTo(0, 0)  
-},1000)
+},1000);
+
 };
 
 

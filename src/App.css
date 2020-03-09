@@ -399,3 +399,12 @@ body {
 .react-grid-layout:nth-child(even) div:nth-child(11) img {
   transform: rotateZ(188deg) !important;
 }
+
+.dev-link {
+ font-size: 12px;
+}
+
+.dev-link a {
+  color: black;
+  text-decoration: none;
+}
