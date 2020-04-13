@@ -19,7 +19,7 @@ class About extends React.Component {
           class={
             this.props.className ? "about-text" : "about-text hidden-about-text"
           }
-        ></div>
+        />
         <p
           class={
             this.props.className
@@ -27,17 +27,17 @@ class About extends React.Component {
               : "hidden-about-inner-text"
           }
         >
-          Caroline Dussuel is a 23-year-old french creative whose main focus is
-          on humans and their particularities. Her curiosity for sociology and
-          psychology brought her to experience different urban and alternative
-          communities, like skateboarding or rave parties, not as an active
-          participant but as an outsider, through the lens of her camera.
-          Naturally drawn towards the unexpected and creative people, she
-          thrives off their energy. For many years she spent time capturing
-          these people, either for herself or through commissioned work. After
-          having studied fashion and design at ESMOD, she became very concerned
-          about industry practices and their impact and started imagining how
-          she could help contribute to a more sustainable future.
+          Caroline Dussuel is a french creative whose main focus is on humans
+          and their particulaities. Her curiosity for sociology and psychology
+          brought her to experience different urban and alternative communities,
+          like skateboarding or rave parties, not as an active participant but
+          as an outsider, through the lens of her camera. Naturally drawn
+          towards the unexpected and creative people, she thrives off their
+          energy. For many years she spent time capturing these people, either
+          for herself or through commissioned work. After having studied fashion
+          and design at ESMOD, she became very concerned about industry
+          practices and their impact and started imagining how she could help
+          contribute to a more sustainable future.
           <br />
           <br />
           If you would like to work with Caroline,{" "}
@@ -47,7 +47,7 @@ class About extends React.Component {
           <br />
           <br />
           <a href="https://www.instagram.com/carokenzy/" target="_blank">
-            <img id="insta-icon" src={insta}></img>
+            <img id="insta-icon" src={insta} />
           </a>
           <div className="dev-link">
             design & code by{" "}
